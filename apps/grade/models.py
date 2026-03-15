@@ -6,7 +6,7 @@ from apps.course.models import Course
 class Grade(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
-    grade = models.IntegerField()
+    grade = models.IntegerField(default=0)
 
     def __str__(self):
         return str(self.grade)

@@ -6,4 +6,4 @@ class CourseAdmin(admin.ModelAdmin):
     list_filter = ['name', 'teacher']
     search_fields = ['name', 'teacher']
 
-admin.site.register(Course)
+admin.site.register(Course, CourseAdmin)
